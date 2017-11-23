@@ -1,7 +1,12 @@
 # EEL840-KDD-CUP-99
 
+## Contexto do tema abordado
 
-## Variáveis utilizadas
+Nossa proposta é analisar o dataset do KDD Cup de 1999 contendo dados de diversos 
+tipos de ataques simulados pela DARPA na rede da Força Aérea Americana em 1998.
+
+Esse dataset contém 4.898.431 registros *(dos quais inicialmente usaremos 10% por limitações computacionais)* e 31 features, sendo elas:
+
 
 ** Variáveis básicas relacionadas ao TCP **
 
@@ -45,3 +50,31 @@
 |srv_serror_rate|% das conexões que possuem SYN error (em conexão de mesmo serviço)|contínua|
 |srv_rerror_rate|% das conexões que possuem REJ error (em conexão de mesmo serviço)|contínua|
 |srv_diff_host_rate |% das conexões para hosts diferentes|contínua|
+
+
+
+## Problema específico envolvendo o tema abordado
+Conseguir classificar se a detecção um determinado padrão de features caracteriza ou não um ataque. Ainda, descobrir quais são as features que melhor caracterizam cada tipo de ataque.
+
+##Proposta de Implementação
+
+Para a análise pretendemos testar diversas técnicas de aprendizado de máquina, desde modelos de classificação até modelos de clusterização. Alguns dos exemplos de modelos que pretendemos testar são regressão logística, k-means, classificadores bayesianos, redes neurais e SVMs. Além disso, pretendemos criar visualizações eficientes e que permitam extrair informações interessantes​ ​dos​ ​dados,​ ​tais​ ​como​ ​histogramas,​ ​boxplots,​ ​matrizes​ ​de​ ​covariância​ ​e​ ​afins.
+
+## Resultados esperados
+Esperamos ser capazes de classificar com um grau maior que 70% de certeza se um conjunto de features caracteriza um ataque ou não. Além disso, pretendemos descobrir as 3 features que melhor caracterizam cada tipo de ataque (DoS,  Probins, R2L & U2R).
+
+## Referências
+
+Referências Bibliográficas
+
+[1] Dataset: http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
+
+[2] GIRMA, Anteneh; GARUBA, Mosses; GOEL, Rajini. Advanced Machine Language Approach to Detect DDoS Attack Using DBSCAN Clustering Technology with Entropy. In: Information Technology-New Generations. Springer, Cham, 2018. p. 125-131.
+
+[3] LI, Qingru et al. An Intrusion Detection System Based on Polynomial Feature Correlation Analysis. In: Trustcom/BigDataSE/ICESS, 2017 IEEE. IEEE, 2017. p. 978-983.
+
+[4]  TAVALLAEE, Mahbod et al. A detailed analysis of the KDD CUP 99 data set. In: Computational Intelligence for Security and Defense Applications, 2009. CISDA 2009. IEEE Symposium on. IEEE, 2009. p. 1-6.
+
+[5] Lincoln Laboratory - https://www.ll.mit.edu/ideval/docs/attackDB.html
+
+[6] http://shodhganga.inflibnet.ac.in/bitstream/10603/9850/8/08_chapter%203.pdf
