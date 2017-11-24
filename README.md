@@ -8,7 +8,7 @@ tipos de ataques simulados pela DARPA na rede da Força Aérea Americana em 1998
 Esse dataset contém 4.898.431 registros *(dos quais inicialmente usaremos 10% por limitações computacionais)* e 31 features, sendo elas:
 
 
-** Variáveis básicas relacionadas ao TCP **
+**Variáveis básicas relacionadas ao TCP**
 
 ---
 | Nome| Descrição | Tipo  |
